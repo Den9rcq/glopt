@@ -1,0 +1,26 @@
+// Libs
+@import "libs/null";
+@import "libs/iconfont";
+
+// Base
+@import "base/variables";
+@import "base/mixins";
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,700);
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+// Blocks
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/promo";

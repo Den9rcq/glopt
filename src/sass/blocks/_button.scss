@@ -1,0 +1,18 @@
+.btn {
+    display: block;
+    background-color: #ec644b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    &_p23 {
+        width: 160px;
+        padding: 18px 23px;
+    }
+    &_p45 {
+        width: 230px;
+        padding: 23px 45px;
+    }
+}
