@@ -7,12 +7,23 @@
     text-align: center;
     text-transform: uppercase;
     border-radius: 30px;
-    &_p23 {
+    transition: all 0.5s;
+    &_w160 {
         width: 160px;
         padding: 18px 23px;
     }
-    &_p45 {
+    &_w180 {
+        width: 180px;
+        height: 45px;
+        padding: 18px 31px;
+    }
+    &_w230 {
         width: 230px;
-        padding: 23px 45px;
+        padding: 23px 44px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &:hover {
+        background-color: #dc5238;
     }
 }

@@ -1,0 +1,47 @@
+.advantage {
+    padding: 50px 0 58px 0;
+    background-color: #f3f3f3;
+    &__title {
+    }
+
+    &__wrapper {
+        margin: 31px 0 0 0;
+        display: grid;
+        grid-template: repeat(4, minmax(65px, auto)) / repeat(2, minmax(488px, auto));
+        column-gap: 99px;
+        row-gap: 34px;
+        grid-auto-rows: auto;
+    }
+
+    &__item {
+        display: grid;
+        grid-template: minmax(64px, auto) / 64px minmax(409px, auto);
+        column-gap: 17px;
+    }
+
+    &__img {
+        width: 64px;
+        height: 64px;
+        @include object-fit;
+    }
+
+    &__content {
+        text-align: left;
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 10px;
+    }
+
+    &__header {
+        color: #ec644b;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__descr {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}

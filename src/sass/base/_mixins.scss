@@ -5,3 +5,17 @@
         object-fit: cover;
     }
 }
+
+@mixin divider {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 148px;
+        height: 1px;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ec644b;
+    }
+}

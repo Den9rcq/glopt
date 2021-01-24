@@ -1,7 +1,8 @@
 .promo {
     background: url("../img/main_bg.jpg") center (center/cover) no-repeat;
-    min-height: 680px;
+    padding: 23px 0 82px 0;
     &__text {
+        margin: 9px 0 0 0;
         color: #ffffff;
         font-family: Roboto;
         font-size: 24px;
@@ -10,6 +11,7 @@
     }
 
     &__header {
+        margin: 25px 0 0 0;
         color: #ec644b;
         font-family: "Roboto Condensed";
         font-size: 72px;
@@ -19,6 +21,7 @@
     }
 
     &__subheader {
+        margin: 9px 0 38px 0;
         color: #ffffff;
         font-family: "Roboto Condensed";
         font-size: 42px;
@@ -28,11 +31,37 @@
     }
 
     &__divider {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 100%;
+        margin: 0 auto;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 390px;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: rgba($color: #fff, $alpha: 1);
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 390px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: rgba($color: #fff, $alpha: 1);
+        }
     }
 
     &__items {
         display: flex;
-        margin: 83px 39px 0 0;
+        margin: 27px 0 0 0;
         justify-content: space-between;
     }
 
@@ -40,7 +69,7 @@
         max-width: 262px;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -65,7 +94,6 @@
 }
 
 .menu {
-    padding: 23px 0 0 0;
     &__row {
         display: flex;
         justify-content: space-between;

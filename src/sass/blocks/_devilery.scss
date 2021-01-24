@@ -1,0 +1,50 @@
+.devilery {
+    padding: 50px 0 55px 0;
+    &__title {
+        @include divider;
+    }
+
+    &__subtitle {
+        margin: 38px 0 0 0;
+    }
+
+    &__wrapper {
+        margin: 37px 0 0 0;
+        display: grid;
+        grid-template: minmax(345px, auto) / repeat(3, 360px);
+        grid-auto-rows: auto;
+        gap: 30px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: 210px auto;
+        row-gap: 27px;
+    }
+
+    &__img {
+        @include object-fit;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 10px;
+        align-content: start;
+    }
+
+    &__header {
+        color: #ec644b;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__decr {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: justify;
+    }
+}
